@@ -1,0 +1,1110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+  margin: 90px 70px;
+  max-width: 1200px;
+}
+
+/*NAVIGATION*/
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 20px 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav #toggle {
+    display: none;
+}
+
+nav img {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/*BANNER*/
+
+.banner {
+  background-image: url("/img/Photo\ by\ Tranmautritam\ from\ Pexels-2-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.banner .overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 110px;
+}
+
+.banner .overlay h1, 
+.banner .overlay h2 {
+  text-align: center;
+  padding: 40px;
+  width: 80%;
+  max-width: 1200px;
+  color: white;
+  margin: 0 auto;
+}
+
+.banner .overlay h1 {
+  font-size: 400%;
+  width: 80%;
+  font-weight: 900;
+}
+
+.banner .overlay h2 {
+  font-weight: 100;
+
+}
+
+/*PRICES*/
+.price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.price .aprice {
+  width: 30%;
+}
+
+.price .aprice .card {
+  color: white;
+  padding: 50px;
+  /*background: url("/img/Photo\ by\ Tranmautritam\ from\ Pexels-2-1.jpg");*/
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price .basic .card,
+.price .basic .features .aFeature {
+  background-color: rgb(179, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price .standard .card,
+.price .standard .features .aFeature {
+  background-color: rgb(109, 109, 109);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.price .pro .card,
+.price .pro .features .aFeature {
+  background-color: rgb(173, 170, 170);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*color: white;*/
+}
+
+.price .aprice .card:nth-child(1) {
+  text-align: center;
+}
+
+.price .aprice .card p {
+  padding: 50px 0px;
+  font-size: 400%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.price .aprice .card a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.price .aprice .card a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+}
+
+
+.price .aprice .features .aFeature {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.price .aprice .features .aFeature p {
+  width: 85%;
+}
+
+.price .aprice .features .aFeature .tick {
+  width: 10%;
+  margin: 0 auto;
+}
+
+
+/*INFORMATION*/
+.information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.information .info-columns {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information .info-columns img,
+.information .info-columns p,
+.information .info-columns h3 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.information img {
+  width: 40%;
+}
+
+.information .info-columns h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+/*CALL TO ACTION*/
+.callToAction {
+  background-image: url("/img/Photo\ by\ Tranmautritam\ from\ Pexels-2-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.callToAction .overlay-callToAction {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.callToAction .overlay-callToAction h2,
+.callToAction .overlay-callToAction p,
+.callToAction .overlay-callToAction a  {
+  text-align: center;
+  color: white;
+  margin: 30px 0px;
+}
+
+.callToAction .overlay-callToAction h2 {
+  font-size: 300%;
+}
+
+.callToAction .overlay-callToAction a  {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid white;
+  padding: 10px;
+  width: 20%;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.callToAction .overlay-callToAction a:hover {
+  background-color: rgb(225, 225, 225, 0.4);
+  color: black;
+  border: 2px solid black;
+}
+
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.footer .footer-column {
+  width: 25%;
+}
+
+.footer .footer-column ul {
+  list-style-type: none;
+}
+
+.footer .footer-column ul li a{
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+.footer .footer-column ul li a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.footer .one h2,
+.footer .two h2,
+.footer .four h2 {
+  margin-bottom: 20px;
+}
+
+.footer .one li,
+.footer .two li,
+.footer .four li {
+  margin-bottom: 10px;
+}
+
+.footer .three .social-media {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.footer .three .social-media li {
+  width: 100%;
+}
+
+.footer .three .social-media .upper-links,
+.footer .three .social-media .lower-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.footer .three .social-media .upper-links li  {
+  margin: 40px 0;
+}
+
+
+.footer .three .social-media a img{
+  width: 40%;
+}
+
+
+.footer .four p,
+.footer .four a {
+  margin: 0 0 40px 0;
+}
+
+.footer .four a {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  
+}
+
+.footer .four a:hover {
+  background-color:white;
+  color: black;
+  border: 2px solid black;
+}
+
+/*COPYRIGHT*/
+.copyright {
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+}
+
+.copyright p {
+  color: white;
+  text-align: center;
+}
+
+
+@media (max-width: 900px) and (min-width: 768px)  {
+  /*GENERAL*/
+  .section {
+    margin: 40px;
+  }
+  
+  /*NAVIGATION*/
+  nav {
+    padding: 20px 40px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+
+  /*BANNER*/
+  .banner .overlay {
+    padding: 40px;
+  }
+  
+  .banner .overlay h1, 
+  .banner .overlay h2 {
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .banner .overlay h1 {
+    font-size: 350%;
+    font-weight: 900;
+  }
+    
+  /*PRICES*/ 
+  .price {
+    justify-content: space-evenly;
+  }
+  
+  .price .aprice {
+    width: 30%;
+  }
+  
+  .price .aprice .card {
+    padding: 30px;
+  }
+  
+  .price .aprice .card p {
+    padding: 50px 0px;
+    font-size: 300%;
+  }
+  
+  .price .aprice .card a {
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  
+  /*Price features*/
+  .price .aprice .features .aFeature {
+    padding: 10px;
+  }
+  
+  .price .aprice .features .aFeature p {
+    width: 75%;
+  }
+  
+  .price .aprice .features .aFeature .tick {
+    width: 18%;
+  }
+  
+  
+  /*INFORMATION*/
+  .information .info-columns {
+    width: 28%;
+  }
+  
+  .information img {
+    width: 50%;
+  }
+  
+  .information .info-columns h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+  }
+  
+  /*CALL TO ACTION*/  
+  .callToAction .overlay-callToAction {
+    padding: 40px;
+  }
+  
+  .callToAction .overlay-callToAction h2 {
+    font-size: 200%;
+  }
+  
+  .callToAction .overlay-callToAction a  {
+    padding: 10px;
+    width: 30%;
+  }
+  
+  
+  /*FOOTER*/
+  .footer {
+    width: 95%;
+  }
+
+  .footer .footer-column {
+    width: 20%;
+  }
+  
+  .footer .one h2,
+  .footer .two h2,
+  .footer .four h2 {
+    margin-bottom: 12px;
+    font-size: 140%;
+  }
+  
+  .footer .one ul li {
+    font-size: 90%;
+  }
+
+  .footer .two ul li a {
+    font-size: 90%;
+  }
+  
+
+  .footer .one li,
+  .footer .two li,
+  .footer .four li {
+    margin-bottom: 8px;
+  }
+  
+  .footer .three .social-media {
+    width: 100%;
+  }
+
+  /*
+  .footer .three .social-media li {
+    width: 100%;
+  }*/
+
+  /*
+  .footer .three .social-media .upper-links,
+  .footer .three .social-media .lower-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }*/
+  
+  .footer .three .social-media .upper-links li  {
+    margin: 10px 0;
+  }
+  
+  
+  .footer .three .social-media a img{
+    width: 70%;
+  }
+  
+  
+  .footer .four p,
+  .footer .four a {
+    margin: 0 0 40px 0;
+  }
+  
+  
+  /*COPYRIGHT*/
+  /*
+  .copyright {
+    padding: 20px;
+    width: 100%;
+  }*/
+}
+
+
+@media (max-width: 768px) and (min-width: 600px)  {
+  /*GENERAL*/
+  .section {
+    margin: 40px;
+  }
+  
+  /*NAVIGATION*/
+  nav {
+    padding: 20px 40px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 10px;
+  }
+  
+
+  /*BANNER*/
+  .banner .overlay {
+    padding: 40px;
+  }
+  
+  .banner .overlay h1, 
+  .banner .overlay h2 {
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .banner .overlay h1 {
+    font-size: 350%;
+    font-weight: 900;
+  }
+    
+  /*PRICES*/ 
+  .price {
+    justify-content: space-evenly;
+  }
+  
+  .price .aprice {
+    width: 30%;
+  }
+  
+  .price .aprice .card {
+    padding: 30px;
+  }
+  
+  .price .aprice .card p {
+    padding: 50px 0px;
+    font-size: 300%;
+  }
+  
+  .price .aprice .card a {
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  
+  /*Price features*/
+  .price .aprice .features .aFeature {
+    padding: 10px;
+  }
+  
+  .price .aprice .features .aFeature p {
+    width: 75%;
+  }
+  
+  .price .aprice .features .aFeature .tick {
+    width: 18%;
+  }
+  
+  
+  /*INFORMATION*/
+  .information .info-columns {
+    width: 28%;
+  }
+  
+  .information img {
+    width: 50%;
+  }
+  
+  .information .info-columns h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+  }
+  
+  /*CALL TO ACTION*/  
+  .callToAction .overlay-callToAction {
+    padding: 40px;
+  }
+  
+  .callToAction .overlay-callToAction h2 {
+    font-size: 200%;
+  }
+  
+  .callToAction .overlay-callToAction a  {
+    padding: 10px;
+    width: 30%;
+  }
+  
+  
+  /*FOOTER*/
+  .footer {
+    width: 95%;
+  }
+
+  .footer .footer-column {
+    width: 20%;
+  }
+  
+  .footer .one h2,
+  .footer .two h2,
+  .footer .four h2 {
+    margin-bottom: 12px;
+    font-size: 140%;
+  }
+  
+  .footer .one ul li {
+    font-size: 90%;
+  }
+
+  .footer .two ul li a {
+    font-size: 90%;
+  }
+  
+
+  .footer .one li,
+  .footer .two li,
+  .footer .four li {
+    margin-bottom: 8px;
+  }
+  
+  .footer .three .social-media {
+    width: 100%;
+  }
+
+  /*
+  .footer .three .social-media li {
+    width: 100%;
+  }*/
+
+  /*
+  .footer .three .social-media .upper-links,
+  .footer .three .social-media .lower-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }*/
+  
+  .footer .three .social-media .upper-links li  {
+    margin: 10px 0;
+  }
+  
+  
+  .footer .three .social-media a img{
+    width: 70%;
+  }
+  
+  
+  .footer .four p,
+  .footer .four a {
+    margin: 0 0 30px 0;
+  }
+  
+  
+  /*COPYRIGHT*/
+  /*
+  .copyright {
+    padding: 20px;
+    width: 100%;
+  }*/
+}
+
+@media (max-width: 600px) and (min-width: 480px)  {
+  /*GENERAL*/
+  .section {
+    margin: 20px;
+  }
+  
+  /*NAVIGATION*/
+  nav {
+    padding: 20px;
+  }
+
+  nav #toggle {
+    display: block;
+    width: 40px;
+  }
+  
+  nav ul li {
+    display: none;
+  }
+  
+
+  /*BANNER*/
+  .banner .overlay {
+    padding: 40px 10px;
+  }
+  
+  .banner .overlay h1, 
+  .banner .overlay h2 {
+    width: 100%;
+  }
+  
+  .banner .overlay h1 {
+    font-size: 300%;
+    padding: 0;    
+  }
+
+  .banner .overlay h2 {
+    padding: 20px;
+  }
+    
+  /*PRICES*/ 
+  .price {
+    justify-content: space-evenly;
+  }
+  
+  .price {
+    flex-direction: column;
+  }
+
+  .price .aprice {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  
+  .price .aprice .card p {
+    padding: 50px 0px;
+    font-size: 300%;
+  }
+  
+  .price .aprice .card a {
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  
+  /*Price features*/
+  .price .aprice .features .aFeature {
+    padding: 10px;
+  }
+  
+  .price .aprice .features .aFeature p {
+    width: 75%;
+  }
+  
+  .price .aprice .features .aFeature .tick {
+    width: 18%;
+  }
+  
+  
+  /*INFORMATION*/
+  .information {
+    margin-bottom: 60px;
+  }
+
+  .information .info-columns {
+    width: 100%;
+    margin: 20px;
+  }
+  
+  .information img {
+    width: 60%;
+  }
+  
+  .information .info-columns h3 {
+    margin-bottom: 20px;
+  
+  }
+  
+  /*CALL TO ACTION*/  
+  .callToAction .overlay-callToAction {
+    padding: 40px;
+  }
+  
+  .callToAction .overlay-callToAction h2 {
+    font-size: 200%;
+  }
+  
+  .callToAction .overlay-callToAction a  {
+    padding: 10px;
+    width: 30%;
+  }
+  
+  
+  /*FOOTER*/
+  .footer {
+    width: 90%;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .footer .footer-column {
+    width: 100%;
+  }
+
+  .footer .one,
+  .footer .two {
+    width: 40% !important;
+    margin-left: 30px;
+  }
+  
+  .footer .two ul li a {
+    text-align: center;
+  }
+
+  .footer .three .social-media {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .footer .three .social-media li {
+    width: 50%;
+  }
+
+  .footer .three .social-media .upper-links,
+  .footer .three .social-media .lower-links {
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+
+  .footer .three .social-media .upper-links li,
+  .footer .three .social-media .lower-links li  {
+    margin: 30px 0;
+  }
+  
+  
+  .footer .three .social-media a img{
+    width: 80%;
+    margin: 30px;
+  }
+  
+  
+  .footer .four p,
+  .footer .four a {
+    margin: 0 0 30px 0;
+  }
+  
+  .footer .four {
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px)  {
+  /*GENERAL*/
+  .section {
+    margin: 20px;
+  }
+  
+  /*NAVIGATION*/
+  nav {
+    padding: 10px;
+  }
+  
+  nav .logo {
+    width: 70px;
+  }
+
+  nav #toggle {
+    display: block;
+    width: 25px;
+  }
+
+  nav ul li {
+    display: none;
+  }
+  
+
+  /*BANNER*/
+  .banner .overlay {
+    padding: 40px 20px;
+  }
+  
+  .banner .overlay h1, 
+  .banner .overlay h2 {
+    width: 100%;
+  }
+
+  .banner .overlay h1 {
+    font-size: 200%;
+    font-weight: 900;
+    padding: 0;
+  }
+  
+  .banner .overlay h2 {
+    font-size: 90%;
+    padding: 30px 0;
+  }
+
+    
+  /*PRICES*/ 
+  .price {
+    justify-content: space-evenly;
+  }
+  
+  .price {
+    flex-direction: column;
+  }
+
+  .price .aprice {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  
+  .price .aprice .card p {
+    padding: 50px 0px;
+    font-size: 300%;
+  }
+  
+  .price .aprice .card a {
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  
+  /*Price features*/
+  .price .aprice .features .aFeature {
+    padding: 10px;
+  }
+  
+  .price .aprice .features .aFeature p {
+    width: 75%;
+  }
+  
+  .price .aprice .features .aFeature .tick {
+    width: 18%;
+  }
+  
+  
+  /*INFORMATION*/
+  .information {
+    margin-bottom: 40px;
+  }
+
+  .information .info-columns {
+    width: 100%;
+    margin: 20px;
+  }
+  
+  .information img {
+    width: 50%;
+  }
+  
+  .information .info-columns h3 {
+    margin-bottom: 20px;
+  
+  }
+  
+  /*CALL TO ACTION*/  
+  .callToAction .overlay-callToAction {
+    padding: 20px 20px 40px;
+  }
+  
+  .callToAction .overlay-callToAction h2 {
+    font-size: 200%;
+  }
+  
+  .callToAction .overlay-callToAction a  {
+    padding: 10px;
+    width: 60%;
+  }
+  
+  
+  /*FOOTER*/
+  .footer {
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 80%;
+  }
+
+  .footer .footer-column {
+    width: 100%;
+  }
+
+  .footer .one,
+  .footer .two {
+    width: 20% !important;
+    margin: 40px;
+  }
+
+  .footer .one ul h2,
+  .footer .two ul h2 {
+      font-size: 70%;
+  }
+    
+  .footer .three .social-media {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .footer .three .social-media li {
+    width: 50%;
+  }
+
+  .footer .three .social-media .upper-links,
+  .footer .three .social-media .lower-links {
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+
+  .footer .three .social-media .upper-links li,
+  .footer .three .social-media .lower-links li  {
+    margin: 0;
+  }
+  
+  
+  .footer .three .social-media a img{
+    width: 80%;
+    margin: 15px;
+  }
+  
+  
+  .footer .four p,
+  .footer .four a {
+    margin: 0 0 30px 0;
+  }
+  
+  .footer .four {
+    padding: 30px;
+    text-align: center;
+  }
+
+  
+  /*COPYRIGHT*/
+  .copyright {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .copyright p {
+    font-size: 80%;
+  }
+}
